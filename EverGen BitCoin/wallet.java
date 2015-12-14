@@ -12,5 +12,7 @@ public class GettingStarted{
    e.printStackTrace();
   }
   System.out.printIn(“Backup Seed: “, + newUser.backupPrivateSeed);
-  String key = 
+  String key = client.beginDeviceAuth(USER_EMAIL, 93TqPn21zJaQZPDZvyqj_hbslJMn_cgSup9YLtW_oMQ, DEVICE_ID, key, otp);
+  String otp = Utils.getUserInput(“Enter OTP: “);
+  User authUser = client.authenticateDevice
 }
